@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*{
+   font-family: "Segoe UI",Arial,sans-serif;
+   font-size: 1.2vw;
+   height:100%;
+}
+
+.game-card{
+	position:relative;
+	font-size: 1em;
+}
+
+.game-card-content:hover{
+	background-color: silver;
+}
+
+.game-card-content{
+	width:15vw;
+	float:bottom;
+	border:1px solid black;
+	text-align: center;	
+	overflow:hidden;
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+.game-card-match-details,
+.game-card-match-team1,
+.game-card-match-team2{
+	height:25%;
+}
+
+.game-card-match-details-label{
+    font-weight: bold;
+}
+
+.game-card-line-bottom{
+	position: absolute; bottom:50%; right:0%;
+	width: 3vw;
+	height:100%;
+	border-bottom: 1px solid blue;		
+    border-right: 1px solid blue;
+}
+
+.game-card-line-top{
+	position: absolute; bottom:-50%; right:0%;
+	width: 3vw;
+	height:100%;
+	border-top: 1px solid blue;		
+    border-right: 1px solid blue;
+	overflow:auto;
+}
+
+.game-card-line-none{
+	width:0; height:0;
+}
+
+.game-card-line-back{
+	float:left;
+	width: 2vw;
+	height:50%;
+	border-bottom: 1px solid blue;		
+}
+
+.match-team1-flag,
+.match-team2-flag{
+	width: 10%;
+	max-height: 3vh;
+}
+
+.round{
+	height:100vh;
+	width:20vw;
+	float:left;
+}
+
+.round-title-breadCrumb{
+	float:right;
+}
